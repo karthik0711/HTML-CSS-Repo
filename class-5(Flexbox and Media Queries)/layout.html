@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            /* background-color: rgb(218, 223, 224); */
+            
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        /* Header Design  */
+        header{
+            color: white;
+            background-color: rgb(14,159,243);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px;
+            
+        }
+
+       nav ul{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            list-style: none;
+            
+        }
+
+        li a{
+            
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Main Design  */
+
+        .hero{
+            background-color: rgb(109, 161, 206);
+            /* display: flex;
+            flex-direction: column;
+            align-items: center; */
+
+            text-align: center;
+            padding: 32px;
+
+        }
+
+        /* Courses  */
+
+        .course-card{
+            background-color: #e0ffff;
+            border: 1px solid #b0c4de;
+            border-radius: 9px;
+
+            flex : 1 1 30%;
+            padding: 32px;
+            
+            
+            
+        }
+
+        .courses{
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 32px;
+        }
+
+        .footer-container{
+            background-color: rgb(14,159,243);
+            padding: 15px;
+            text-align: center;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <main>
+    <header>
+        <h1>MountBlue</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+        <section class="hero">
+          <h2>Welcome to MountBlue</h2>
+          <p>Discover the best courses and tutorials online.</p>
+        </section>
+        <section class="courses">
+          <div class="course-card" id="card1">
+            <h3>JAVA Development</h3>
+            <p>Learn the latest JAVA technologies.</p>
+          </div>
+          <div class="course-card" id="card2">
+            <h3>Full stack</h3>
+            <p>Master Full Stack and Web Development.</p>
+          </div>
+          <div class="course-card" id="card3">
+            <h3>Python</h3>
+            <p>Explore the world of AI and machine learning.</p>
+          </div>
+          <div class="course-card" id="card4">
+            <h3>Devops</h3>
+            <p>Learn Devops and how to Ship Production Ready Applications</p>
+          </div>
+        </section>
+    </main>
+        <footer>
+          <div class="footer-container">
+          <p>&copy; 2024 MountBlue. All rights reserved.</p>
+          </div>
+        </footer>
+</body>
+</html>
